@@ -1,0 +1,208 @@
+:root{
+    --violet: #AD1FEA;
+    --ghost-violet:#c75af6;
+    --blue: #4661e6;
+    --ghost-blue: #62bfca;
+    --dark-blue: #373f68;
+    --white: #ffffff;
+    --gray: #f2f4ff;
+    --ghost-gray: #f7f8fd;
+    --navy-blue:#3a4374;
+    --ghost-navy-blue: #647196;
+    --red: #d73737;
+    --ghost-red: #e98888;
+    --coral: #f49f85;
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 63.5%;
+}
+body{
+    font-family: 'Jost', sans-serif;
+    background-color: var(--ghost-gray);
+}
+/* Navbar */
+.header{
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 18px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar--mobile{
+    background: url(./assets/suggestions/mobile/background-header.png);
+    width: 100%;
+}
+.navbar__description{
+    color: var(--white);
+}
+.navbar__title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 22px;
+}
+.navbar__text{
+    opacity: 0.75;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 19px;
+}
+.navbar__icon{
+    width: 20px;
+    object-fit: contain;
+    cursor: pointer;
+}
+/* Filter section */
+.filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 12px 18px;
+    margin-top: 70px;
+}
+.sort{
+    position: relative;
+}
+.sort__label{
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2rem;
+    color: var(--gray);
+}
+.dropdown{
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--gray);
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+.dropdown__icon{
+    margin-left: 5px;
+    height: 8px;
+    width: 10px;
+}
+.dropdown-menu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px -7px rgba(55, 63, 104, 0.350492);
+    top: 25px;
+}
+.dropdown-menu__item{
+    padding: 10px 18px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray);
+}
+.dropdown__menu-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--ghost-navy-blue);
+}
+.dropdown__menu-link:hover{
+    color: var(--violet);
+}
+.drowpdown-menu__icon{
+    width: 12px;
+    object-fit: contain;
+}
+/* Buttons */
+.btn{
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 2rem;
+    padding: 8px 18px;
+    border-radius: 10px;
+    text-decoration: none;    
+    transition: 0.3s ease;
+}
+.btn--full{
+    width: 100%;
+}
+.btn-1{    
+    background-color: var(--violet);
+}
+.btn-1:hover{
+    background-color: var(--ghost-violet);
+}
+.btn-2{    
+    background-color: var(--blue);
+}
+.btn-2:hover{
+    background-color: var(--ghost-blue);
+}
+.btn-3{
+    background-color: var(--navy-blue);
+}
+.btn-3:hover{
+    background-color: var(--ghost-navy-blue);
+}
+.btn-4{
+    background-color: var(--red);
+}
+.btn-4:hover{
+    background-color: var(--ghost-red);
+}
+/* Cards */
+.cards__container{
+    padding: 30px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.card{
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card__title{
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--navy-blue);
+}
+.card__text{
+    font-size: 1.3rem;
+    font-weight: normal;
+    line-height: 1.8rem;
+    color: var(--ghost-navy-blue);
+}
+/* Badges */
+.badge{
+    width: fit-content;
+    padding: 5px 16px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.9rem;
+    background-color: var(--gray);
+    color: var(--blue);
+    text-decoration: none;
+    border-radius: 10px;
+}
