@@ -359,6 +359,9 @@ body{
     line-height: 2.2rem;
     color: var(--navy-blue);
 }
+.input--area{
+    height: 120px;
+}
 .input:focus{
     outline: 1px solid var(--blue);
 }
@@ -379,6 +382,13 @@ body{
 }
 .dropdown-sort__input:focus{
     outline: none;
+}
+.form__buttons{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
 }
 
 @media (min-width:767px) {
