@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>No Suggestions</title>
+</head>
+<body>
+    <div class="forms__container">        
+        <header class="go-back">
+            <a href="#" class="go-back__link">
+                <img src="./assets/shared/icon-arrow-left.svg" alt="arrow left" class="go-back__icon">
+                Go Back
+            </a>
+        </header>
+        <form class="form">
+            <img src="./assets/shared/icon-new-feedback.svg" alt="" class="form__icon">
+            <h2 class="form__title">Create New Feedback</h2>
+            <label for="title" class="label">
+                Feedback Title
+                <p class="label__description">Add a short, descriptive headline</p>
+            </label>            
+            <input id="title" type="text" class="input input__error">
+            <p class="input__error-msg">Can´t be empty</p>
+        </form>
+    </div>
+</body>
+</html>
